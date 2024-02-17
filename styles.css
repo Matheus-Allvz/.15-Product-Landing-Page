@@ -50,6 +50,7 @@ nav {
 main {
     margin-top: 95px;
     text-align: center;
+    margin-bottom: 95px;
 }
 
 .main-h1 {
@@ -75,11 +76,6 @@ iframe {
     margin-bottom: 48px;
 }
 
-.products-h2 {
-    margin-bottom: 24px;
-    margin-top: 14px;
-}
-
 .products-inside {
     display: flex;
     justify-content: space-evenly;
@@ -88,9 +84,28 @@ iframe {
     margin-bottom: 48px;
 }
 
+.products-h2 {
+    margin-bottom: 24px;
+    margin-top: 14px;
+}
+
+
+.product-card {
+    border: 1px grey solid;
+    border-radius: 32px;
+    padding-bottom: 4px;
+
+    overflow: hidden;
+}
+
+.product-card:hover {
+    border-radius: 30px;
+}
+
 .product-img {
     width: 200px;
-    border-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 .value-h3 {
@@ -115,11 +130,67 @@ iframe {
 }
 
 .value-button {
-    width: 130px;
-    height: 41px;
+    width: 140px;
+    height: 38px;
 
-    background-color: green;
+    background-color: rgb(1, 185, 1);
 
     border-radius: 12px;
     border: 0;
+
+    color: white;
+}
+
+.value-button:hover {
+    background-color: rgb(4, 156, 4);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.section-form p {
+    margin: 34px auto;
+    margin-bottom: 12px;
+}
+
+#email {
+    width: 310px;
+    height: 38px;
+    padding: 12px;
+    border-radius: 4px;
+
+    border: 1px solid black;
+}
+
+input#email:focus {
+    border: 1px solid black;
+}
+
+#submit {
+    width: 100px;
+    height: 38px;
+    border-radius: 8px;
+    background-color: rgb(2, 245, 2);
+    border: 0;
+
+    text-align: center;
+    justify-content: center;
+}
+
+#submit:hover {
+    border: 1px solid green;
+    background-color: green;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 64px;
+    font-size: 14px;
+    color: #7c7a79;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 4px solid  #3c97d5;
 }
