@@ -66,14 +66,45 @@ iframe {
     margin-bottom: 14px;
 }
 
-.features-text {
-    font-size: 14px;
-    margin: 12px 0;
-    text-decoration: underline;
+#section-features {
+    margin-top: 28px;
 }
 
 .features-ul {
     margin-bottom: 48px;
+    display: block;
+}
+
+.features-li {
+    width: fit-content;
+    display: block;
+    margin-bottom: 24px;
+    text-align: left;
+
+    margin: auto;
+}
+
+.features-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:fit-content;
+
+    gap: 12px;
+}
+
+i {
+    font-size: 32px;
+}
+
+.features-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.features-text {
+    font-size: 18px;
+
 }
 
 .products-inside {
