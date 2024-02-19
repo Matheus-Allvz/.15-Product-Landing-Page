@@ -6,6 +6,10 @@
 /* font-family: "Jost", sans-serif; */
 /* font-family: "Protest Strike", sans-serif; */
 
+@media screen and (max-width:900px) {
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,7 +37,7 @@ body {
 
     padding: 12px 22px;
 
-    border-bottom: 4px solid  #3c97d5;
+    border-bottom: 4px solid  #ff8c00;
 }
 
 #header-img {
@@ -45,6 +49,65 @@ nav {
     gap: 24px;
     margin-left: auto;
     margin-right: 64px;
+}
+
+@media screen and (max-width:1000px) {
+    nav {
+        font-size: 14px;
+    }
+
+    #header-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        font-size: 12px;
+    }
+
+    #header-img {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    nav {
+        font-size: 10px;
+    }
+
+    #header-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    nav {
+        font-size: 0px;
+    }
+
+    #header-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    nav {
+        font-size: 0px;
+    }
+
+    #header-img {
+        width: 250px;
+    }
+
+    .iframe {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+.nav-link:checked {
+    text-decoration: none;
 }
 
 main {
@@ -60,6 +123,8 @@ main {
 
 iframe {
     margin-bottom: 40px;
+    height: 315px;
+    width: 620px;
 }
 
 .section-h2 {
@@ -72,39 +137,42 @@ iframe {
 
 .features-ul {
     margin-bottom: 48px;
-    display: block;
 }
 
 .features-li {
     width: fit-content;
-    display: block;
     margin-bottom: 24px;
-    text-align: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     margin: auto;
+    margin-bottom: 32px;
+
+    gap: 24px
 }
 
 .features-div {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width:fit-content;
-
     gap: 12px;
 }
 
 i {
-    font-size: 32px;
+    font-size: 52px;
+    color: orangered;
 }
 
 .features-title {
     font-size: 24px;
     font-weight: bold;
+    text-align: left;
 }
 
 .features-text {
+    max-width: 800px;
     font-size: 18px;
-
+    text-align: left;
+    line-height: 18px;
 }
 
 .products-inside {
@@ -122,15 +190,10 @@ i {
 
 
 .product-card {
-    border: 1px grey solid;
-    border-radius: 32px;
+    background-color: rgba(172, 172, 172, 0.479);
     padding-bottom: 4px;
-
-    overflow: hidden;
-}
-
-.product-card:hover {
     border-radius: 30px;
+    overflow: hidden;
 }
 
 .product-img {
@@ -223,5 +286,5 @@ footer {
     justify-content: center;
     align-items: center;
 
-    border-top: 4px solid  #3c97d5;
+    border-top: 4px solid  orangered;
 }
